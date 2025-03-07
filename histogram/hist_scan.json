@@ -1,0 +1,80 @@
+{
+  "name": "histogram",
+  "label": "histogram",
+  "description": "Runs histogram",
+  "version": "1.0",
+  "schema-version": "1.0",
+  "image": "histogram:latest",
+  "type": "docker",
+  "command-line": "python ./main.py",
+  "mounts": [
+    {
+      "name": "dicom-in",
+      "writable": false,
+      "path": "/input"
+    },
+    {
+      "name": "hist-out",
+      "writable": true,
+      "path": "/output"
+    }
+  ],
+  "environment-variables": {},
+  "ports": {},
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "hist",
+      "description": "The histogram files",
+      "required": true,
+      "mount": "hist-out"
+    }
+  ],
+  "xnat": [
+    {
+      "name": "hist-scan",
+      "label": "hist",
+      "description": "Run hist on a Scan",
+      "contexts": [
+        "xnat:imageScanData"
+      ],
+      "external-inputs": [
+        {
+          "name": "scan",
+          "description": "Input scan",
+          "type": "Scan",
+          "matcher": "'DICOM' in @.resources[*].label",
+          "required": true,
+          "load-children": true
+        }
+      ],
+      "derived-inputs": [
+        {
+          "name": "scan-dicoms",
+          "description": "The dicom resource on the scan",
+          "type": "Resource",
+          "matcher": "@.label == 'DICOM'",
+          "required": true,
+          "provides-files-for-command-mount": "dicom-in",
+          "load-children": true,
+          "derived-from-wrapper-input": "scan",
+          "multiple": false
+        }
+      ],
+      "output-handlers": [
+        {
+          "name": "hist-resource",
+          "accepts-command-output": "hist",
+          "as-a-child-of": "scan",
+          "type": "Resource",
+          "label": "HIST",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "container-labels": {},
+  "generic-resources": {},
+  "ulimits": {},
+  "secrets": []
+}
