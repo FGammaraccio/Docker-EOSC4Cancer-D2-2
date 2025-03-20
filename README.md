@@ -18,5 +18,5 @@ Docker images examples
    ```
 4. Run the container
    ```sh
-   docker build -t snr ./snr
+   docker run --rm -v .\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input -v .\data\output\output_snr:/output snr
    ```
