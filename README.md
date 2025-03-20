@@ -1,8 +1,5 @@
 # Docker-EOSC4Cancer-D2-2
 
-## Overview
-This repository provides a Docker environment for computing the Signal-to-Noise Ratio (SNR) on patient CT scans.
-
 ## Prerequisites
 * [Docker](https://www.docker.com/) 
 
@@ -43,8 +40,26 @@ The input consists of a single patient's CT scan in DICOM format. The scan is pr
 Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemAction/search_element/xnat%3ActSessionData/search_field/xnat%3ActSessionData.ID/search_value/BMIAXNAT_E87500/popup/false/project/eosc4cancer_tcga_coad)
 
 ### Output
-- **SNR Output**: A text file containing the computed SNR is saved in the `/output` directory.
+- **SNR Output**: A text file containing the computed SNR.
 
+## SNR Description
+SNR is a tool designed to calculate the Signal-to-Noise Ratio (SNR). It performs the following steps:
+
+Reads DICOM files from the specified input folder.
+
+Constructs a 3D volume by ordering the slices based on the DICOM Instance Number tag.
+
+Computes the SNR in the 3D volume using the formula:
+
+
+
+i_avg is the average intensity value at the center of the volume (using a kernel size of 5x5 pixels).
+
+σ_i is the standard deviation of the background noise, calculated from a 5x5 pixel region in the top-left corner.
+
+Saves the SNR value to a text file in the output folder.
+
+This automated approach ensures consistency and efficiency in SNR calculations for medical imaging analysis.
 
 
 ---
