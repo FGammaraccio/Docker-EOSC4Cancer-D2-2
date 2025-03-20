@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cat:Catalog ID="1" xmlns:arc="http://nrg.wustl.edu/arc" xmlns:cat="http://nrg.wustl.edu/catalog" xmlns:icr="http://icr.ac.uk/icr" xmlns:pipe="http://nrg.wustl.edu/pipe" xmlns:prov="http://www.nbirn.net/prov" xmlns:scr="http://nrg.wustl.edu/scr" xmlns:val="http://nrg.wustl.edu/val" xmlns:wrk="http://nrg.wustl.edu/workflow" xmlns:xdat="http://nrg.wustl.edu/security" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xnat_a="http://nrg.wustl.edu/xnat_assessments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<cat:metaFields>
+	<cat:metaField name="PROJECT">eosc4cancer_tcga_coad</cat:metaField>
+	<cat:metaField name="AUDIT">14415247:Tue Mar 18 14:15:53 UTC 2025=Added:1|14415248:Tue Mar 18 14:15:58 UTC 2025=Added:1;Modified:1</cat:metaField>
+</cat:metaFields>
+<cat:entries>
+	<cat:entry ID="BMIAXNAT_E87500_1_qc.gif" URI="BMIAXNAT_E87500_1_qc.gif" cachePath="BMIAXNAT_E87500_1_qc.gif" content="ORIGINAL" createdBy="mbirhanu" createdEventId="14415247" createdTime="2025-03-18T14:15:53.127" digest="3bcca0cab9cfc872dc02d824f1ab114a" format="gif" modifiedBy="mbirhanu" modifiedEventId="14415248" modifiedTime="2025-03-18T14:15:58.534" name="BMIAXNAT_E87500_1_qc.gif">
+		<cat:metaFields>
+			<cat:metaField name="SIZE">197446</cat:metaField>
+		</cat:metaFields>
+	</cat:entry>
+	<cat:entry ID="BMIAXNAT_E87500_1_qc_t.gif" URI="BMIAXNAT_E87500_1_qc_t.gif" cachePath="BMIAXNAT_E87500_1_qc_t.gif" content="THUMBNAIL" createdEventId="14415248" createdTime="2025-03-18T14:15:58.534" digest="e3a3b2c72661211f7513a9538aa141af" format="gif" name="BMIAXNAT_E87500_1_qc_t.gif">
+		<cat:metaFields>
+			<cat:metaField name="SIZE">55213</cat:metaField>
+		</cat:metaFields>
+	</cat:entry>
+</cat:entries>
+</cat:Catalog>

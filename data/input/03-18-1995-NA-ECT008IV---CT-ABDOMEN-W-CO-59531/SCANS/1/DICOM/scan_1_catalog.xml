@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cat:DCMCatalog UID="1.3.6.1.4.1.14519.5.2.1.3671.4017.233384508721338042150906022725" xmlns:arc="http://nrg.wustl.edu/arc" xmlns:cat="http://nrg.wustl.edu/catalog" xmlns:icr="http://icr.ac.uk/icr" xmlns:pipe="http://nrg.wustl.edu/pipe" xmlns:prov="http://www.nbirn.net/prov" xmlns:scr="http://nrg.wustl.edu/scr" xmlns:val="http://nrg.wustl.edu/val" xmlns:wrk="http://nrg.wustl.edu/workflow" xmlns:xdat="http://nrg.wustl.edu/security" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xnat_a="http://nrg.wustl.edu/xnat_assessments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<cat:metaFields>
+	<cat:metaField name="PROJECT">eosc4cancer_tcga_coad</cat:metaField>
+	<cat:metaField name="AUDIT">13652273:Tue Feb 27 16:11:25 UTC 2024=Added:1</cat:metaField>
+</cat:metaFields>
+<cat:entries>
+	<cat:entry ID="1-1.dcm" UID="1.3.6.1.4.1.14519.5.2.1.3671.4017.256283610825047550703048558644" URI="1-1.dcm" createdBy="mbirhanu" createdEventId="13652273" createdTime="2024-02-27T16:11:25.041" digest="1b70883f84b9b4523a5d9ee076f8ee7d" format="DICOM" instanceNumber="1" xsi:type="cat:dcmEntry"/>
+</cat:entries>
+<cat:dimensions x="512" y="512" z="1"/>
+<cat:voxelRes x="1.0" y="1.0" z="1.0"/>
+<cat:orientation>Cor</cat:orientation>
+</cat:DCMCatalog>
