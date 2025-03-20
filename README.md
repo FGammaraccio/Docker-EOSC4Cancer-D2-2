@@ -47,14 +47,14 @@ Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemActio
 
 1. **Reads DICOM files** from the specified input folder.
 2. **Constructs a 3D volume** by ordering the slices based on the DICOM Instance Number tag.
-3. **Computes the SNR** in the 3D volume using the formula:
-
-\[ x
+3. **Computes the SNR** in the 3D volume using the formula: \[ x
   = \dfrac{\dfrac{a}{b}}{c}
   = \dfrac{\frac{\textstyle a}{\textstyle b}}{c}
   = \dfrac{\frac{a}{b}}{c}
   \equiv \dfrac{\tfrac{a}{b}}{c}
 \]
+
+
 
    - `i_avg` is the average intensity value at the center of the volume (using a kernel size of 5x5 pixels).
    - `σ_i` is the standard deviation of the background noise, calculated from a 5x5 pixel region in the top-left corner.
