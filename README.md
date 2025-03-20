@@ -25,8 +25,8 @@ Follow these steps to build and run the Docker container:
 4. **Run the container**
    ```sh
    docker run --rm ^
-     -v ./data/input/03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531/SCANS/2/DICOM:/input ^
-     -v ./data/output/output_snr:/output snr
+     -v .\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input ^
+     -v .\data\output\output_snr:/output snr
    ```
    This command runs the container and mounts the input and output directories:
    - `./data/input/.../DICOM` is mapped to `/input` inside the container.
