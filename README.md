@@ -69,6 +69,14 @@ Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemActio
 3. **Computes the SNR** in the 3D volume.
 4. **Saves the SNR value** to a text file in the output folder.
 
+## About Convolution 2D
+**2D Convolution** is a tool designed to perform 2D convolution (image filtering) with the following steps:
+
+1. **Reads DICOM files** from the specified input folder.
+2. **Constructs a 3D volume** by ordering the slices based on the DICOM Instance Number tag.
+3. **Performs the convolution**: modifies the image and updates the DICOM tags.
+4. **Saves the denoised DICOM files** in the specified output folder.
+
 ---
 
 
