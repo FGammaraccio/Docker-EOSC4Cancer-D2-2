@@ -18,10 +18,15 @@ Follow these steps to build and run the Docker container:
    ```
 
 ### 3. **Build the Docker image**
+   The following command creates a Docker image named `snr` using the `Dockerfile` in the `snr` folder:
    ```sh
    docker build -t snr ./snr
    ```
-   This command creates a Docker image named `snr` using the `Dockerfile` in the `snr` folder.
+   or
+   The following command creates a Docker image named `convolution_2d` using the `Dockerfile` in the `convolution_2d` folder:
+   ```sh
+   docker build -t convolution_2d ./convolution_2d
+   ```
 
 ### 4. **Run the container**
 #### On Windows (CMD)
