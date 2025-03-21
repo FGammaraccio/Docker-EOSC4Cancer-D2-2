@@ -18,12 +18,12 @@ Follow these steps to build and run the Docker container:
    ```
 
 ### 3. **Build the Docker image**
-   SNR Docker Image  
+   **SNR**  
    The following command creates a Docker image named `snr` using the `Dockerfile` in the `snr` folder:
    ```sh
    docker build -t snr ./snr
    ```
-   Convolution 2D Docker Image  
+   **Convolution 2D**    
    The following command creates a Docker image named `convolution_2d` using the `Dockerfile` in the `convolution_2d` folder:
    ```sh
    docker build -t convolution_2d ./convolution_2d
@@ -31,14 +31,14 @@ Follow these steps to build and run the Docker container:
 
 ### 4. **Run the container**
 #### On Windows (CMD)
-   SNR Container
+   **SNR Container**  
    ```sh
    docker run --rm ^
   -v "%cd%\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input" ^
   -v "%cd%\data\output\output_snr:/output" ^
   snr
    ```
-   Convolution 2D Container
+   **Convolution 2D Container**  
    ```sh
    docker run --rm ^
   -v "%cd%\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input" ^
