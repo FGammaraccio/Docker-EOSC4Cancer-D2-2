@@ -54,7 +54,7 @@ Follow these steps to build and run the Docker container:
 ## Data
 
 ### Input
-The input consists of a single patient's CT scan in DICOM format. The scan is processed within the container.
+The input consists of a single patient's CT scan in DICOM format.  
 Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemAction/search_element/xnat%3ActSessionData/search_field/xnat%3ActSessionData.ID/search_value/BMIAXNAT_E87500/popup/false/project/eosc4cancer_tcga_coad)
 
 ### Output
