@@ -59,6 +59,7 @@ Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemActio
 
 ### Output
 - **SNR Output**: A text file containing the computed SNR.
+- **Convolution 2D Output**: Filtered DICOM images and updated tags.
 
 ## About SNR 
 **SNR** is a tool designed to calculate the Signal-to-Noise Ratio (SNR). It performs the following steps:
