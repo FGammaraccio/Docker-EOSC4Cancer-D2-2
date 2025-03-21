@@ -81,7 +81,7 @@ Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemActio
 
 ## About Convolution 2D in XNAT
 Same as convolution 2D but adapted to launch a container in **XNAT**.  
-[Video-tutorial](https://drive.google.com/drive/folders/1-TaOmXurFRz_Z5HH44pAyF7tUXEltCDP?usp=drive_link) demonstrating its functionality in XNAT
+[Here](https://drive.google.com/drive/folders/1-TaOmXurFRz_Z5HH44pAyF7tUXEltCDP?usp=drive_link) a video tutorial demonstrating its functionality in XNAT.
 
 ---
 
