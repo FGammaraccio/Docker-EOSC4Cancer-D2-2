@@ -32,7 +32,7 @@ Follow these steps to build and run the Docker container:
   snr
    ```
    **Bind mounts**  
-   - `-v <host-path>:<container-path>` → Bind mounts
+   - `-v <host-path>:<container-path>` 
 
 
 ---
