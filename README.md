@@ -60,7 +60,7 @@ Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemActio
 ### Output
 - **SNR Output**: A text file containing the computed SNR.
 
-## About SNR Calculation
+## About SNR 
 **SNR** is a tool designed to calculate the Signal-to-Noise Ratio (SNR). It performs the following steps:
 
 1. **Reads DICOM files** from the specified input folder.
