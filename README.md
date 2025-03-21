@@ -80,8 +80,8 @@ Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemActio
 4. **Saves the denoised DICOM files** in the specified output folder.
 
 ## About Convolution 2D in XNAT
-Same as convolution 2D but adapted to launch a container in **XNAT**.  
-[Here](https://drive.google.com/drive/folders/1-TaOmXurFRz_Z5HH44pAyF7tUXEltCDP?usp=drive_link) a video tutorial demonstrating its functionality in XNAT.
+Similar to 2D convolution but adapted to launch a container in XNAT.  
+[Here](https://drive.google.com/drive/folders/1-TaOmXurFRz_Z5HH44pAyF7tUXEltCDP?usp=drive_link) is a video tutorial demonstrating its functionality in XNAT.
 
 ---
 
