@@ -27,15 +27,9 @@ Follow these steps to build and run the Docker container:
 #### On Windows (CMD)
    ```sh
    docker run --rm ^
-     -v .\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input ^
-     -v .\data\output\output_snr:/output snr
-   ```
-
-#### On Linux/macOS (Bash)
-   ```sh
-   docker run --rm \
-     -v $(pwd)/data/input/03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531/SCANS/2/DICOM:/input \
-     -v $(pwd)/data/output/output_snr:/output snr
+  -v "%cd%\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input" ^
+  -v "%cd%\data\output\output_snr:/output" ^
+  snr
    ```
    **Bind mounts**  
    - `-v <host-path>:<container-path>` → Bind mounts
