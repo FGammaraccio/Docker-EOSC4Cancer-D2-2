@@ -1,37 +1,47 @@
 # Docker-EOSC4Cancer-D2-2
 
 ## Prerequisites
-* [Docker](https://www.docker.com/) 
+Before starting, make sure you have installed:  
+- [Docker](https://www.docker.com/)  
 
 ## Usage
 Follow these steps to build and run the Docker container:
 
-1. **Clone the repository**
+### 1. **Clone the repository**
    ```sh
    git clone https://github.com/FGammaraccio/Docker-EOSC4Cancer-D2-2.git
    ```
 
-2. **Navigate to the project directory**
+### 2. **Navigate to the project directory**
    ```sh
    cd Docker-EOSC4Cancer-D2-2
    ```
 
-3. **Build the Docker image**
+### 3. **Build the Docker image**
    ```sh
    docker build -t snr ./snr
    ```
-   This command creates a Docker image named `snr` from the `snr` directory.
+   This command creates a Docker image named `snr` using the `Dockerfile` in the `snr` folder.
 
-4. **Run the container**
+### 4. **Run the container**
+#### On Windows (CMD)
    ```sh
    docker run --rm ^
      -v .\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input ^
      -v .\data\output\output_snr:/output snr
    ```
-   This command runs the container and mounts the input and output directories:
-   - `./data/input/.../DICOM` is mapped to `/input` inside the container.
-   - `./data/output/output_snr` is mapped to `/output` inside the container.
-   - The `--rm` flag ensures the container is removed after execution.
+
+#### On Linux/macOS (Bash)
+   ```sh
+   docker run --rm \
+     -v $(pwd)/data/input/03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531/SCANS/2/DICOM:/input \
+     -v $(pwd)/data/output/output_snr:/output snr
+   ```
+   **Bind mounts**  
+   - `-v <host-path>:<container-path>` → Bind mounts
+
+
+---
 
 ## Data
 
@@ -42,16 +52,13 @@ Example dataset: [CT scan](https://xnat.health-ri.nl/app/action/DisplayItemActio
 ### Output
 - **SNR Output**: A text file containing the computed SNR.
 
-## SNR Description
+## About SNR Calculation
 **SNR** is a tool designed to calculate the Signal-to-Noise Ratio (SNR). It performs the following steps:
 
 1. **Reads DICOM files** from the specified input folder.
 2. **Constructs a 3D volume** by ordering the slices based on the DICOM Instance Number tag.
 3. **Computes the SNR** in the 3D volume.
 4. **Saves the SNR value** to a text file in the output folder.
-
-
-
 
 ---
 
