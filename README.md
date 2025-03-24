@@ -1,7 +1,5 @@
 # Docker-EOSC4Cancer-D2-2
 
----
-
 ## Prerequisites
 Before starting, make sure you have installed:  
 - [Docker](https://www.docker.com/)  
