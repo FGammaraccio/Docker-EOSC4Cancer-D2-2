@@ -49,7 +49,7 @@ Follow these steps to build and run the Docker container:
    The docker run command uses the -v flag to mount a file or directory on the host machine from the host into a container:
    ```sh
    -v <host-path>:<container-path>
-   '''
+   ```
    where:
         1. host-path: The location of the file or directory on the host. This can be an absolute or relative path.
         2. container-path: The path where the file or directory is mounted in the container. Must be an absolute path.
