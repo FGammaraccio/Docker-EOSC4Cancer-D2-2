@@ -1,5 +1,7 @@
 # Docker-EOSC4Cancer-D2-2
 
+---
+
 ## Prerequisites
 Before starting, make sure you have installed:  
 - [Docker](https://www.docker.com/)  
@@ -60,7 +62,7 @@ Follow these steps to build and run the Docker container:
    -v "$(pwd)/data/output/output_convolution_2d:/output" \
    convolution_2d
    ```
-   **Bind mounts**  
+### Bind mounts  
    The docker run command uses the -v flag to mount a file or directory on the host machine from the host into a container:
    ```sh
    docker run -v <host-path>:<container-path>[:opts]
