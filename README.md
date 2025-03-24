@@ -34,16 +34,31 @@ Follow these steps to build and run the Docker container:
    **SNR Container**  
    ```sh
    docker run --rm ^
-  -v "%cd%\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input" ^
-  -v "%cd%\data\output\output_snr:/output" ^
-  snr
+   -v "%cd%\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input" ^
+   -v "%cd%\data\output\output_snr:/output" ^
+   snr
    ```
    **Convolution 2D Container**  
    ```sh
    docker run --rm ^
-  -v "%cd%\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input" ^
-  -v "%cd%\data\output\output_convolution_2d:/output" ^
-  convolution_2d
+   -v "%cd%\data\input\03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531\SCANS\2\DICOM:/input" ^
+   -v "%cd%\data\output\output_convolution_2d:/output" ^
+   convolution_2d
+   ```
+#### On Unix-based Systems (Linux/macOS)
+   **SNR Container**  
+   ```sh
+   docker run --rm \
+   -v "$(pwd)/data/input/03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531/SCANS/2/DICOM:/input" \
+   -v "$(pwd)/data/output/output_snr:/output" \
+   snr
+   ```
+   **Convolution 2D Container**  
+   ```sh
+    docker run --rm \
+   -v "$(pwd)/data/input/03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531/SCANS/2/DICOM:/input" \
+   -v "$(pwd)/data/output/output_convolution_2d:/output" \
+   convolution_2d
    ```
    **Bind mounts**  
    The docker run command uses the -v flag to mount a file or directory on the host machine from the host into a container:
