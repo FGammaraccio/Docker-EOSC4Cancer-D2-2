@@ -48,7 +48,7 @@ Follow these steps to build and run the Docker container:
    **Bind mounts**  
    The docker run command uses the -v flag to mount a file or directory on the host machine from the host into a container:
    ```sh
-   -v <host-path>:<container-path>
+   docker run -v <host-path>:<container-path>[:opts]
    ```
    where:  
         1. host-path: The location of the file or directory on the host. This can be an absolute or relative path.  
