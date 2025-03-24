@@ -55,7 +55,7 @@ Follow these steps to build and run the Docker container:
    ```
    **Convolution 2D Container**  
    ```sh
-    docker run --rm \
+   docker run --rm \
    -v "$(pwd)/data/input/03-18-1995-NA-ECT008IV---CT-ABDOMEN-W-CO-59531/SCANS/2/DICOM:/input" \
    -v "$(pwd)/data/output/output_convolution_2d:/output" \
    convolution_2d
