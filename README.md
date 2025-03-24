@@ -53,7 +53,7 @@ Follow these steps to build and run the Docker container:
    where:  
         1. host-path: The location of the file or directory on the host. This can be an absolute or relative path.  
         2. container-path: The path where the file or directory is mounted in the container. Must be an absolute path.  
-   - [Documentation](https://docs.docker.com/engine/storage/bind-mounts/)
+   [Documentation](https://docs.docker.com/engine/storage/bind-mounts/)
 
 
 ---
