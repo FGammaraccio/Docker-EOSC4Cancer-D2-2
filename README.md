@@ -30,7 +30,7 @@ Follow these steps to build and run the Docker container:
    ```
 
 ### 4. **Run the container**
-#### On Windows (CMD)
+### On Windows (CMD)
    **SNR Container**  
    ```sh
    docker run --rm ^
@@ -45,7 +45,7 @@ Follow these steps to build and run the Docker container:
    -v "%cd%\data\output\output_convolution_2d:/output" ^
    convolution_2d
    ```
-#### On Unix-based Systems (Linux/macOS)
+### On Unix-based Systems (Linux/macOS)
    **SNR Container**  
    ```sh
    docker run --rm \
